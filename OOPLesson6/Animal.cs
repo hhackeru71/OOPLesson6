@@ -9,17 +9,16 @@ namespace OOPLesson6
     internal class Animal
     {
         public string Name { get; set; }
-        public string UserName { get; set; }
-
-        public Animal(string name,string userName)
+        public string Sounds { get; set; }
+        public Animal(string name, string sounds)
         {
-            UserName = userName;
             Name = name;
+            Sounds = sounds;
         }
 
-        public virtual string Get ()
+        public virtual string Print ()
         {
-            return Name +" " + UserName;
+            return Name +" " + Sounds;
         }
     }
 }
